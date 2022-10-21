@@ -171,7 +171,7 @@ class Comparator(ttk.Frame):
         ttk.Frame(self, width=75).grid(row=4, column=5) # To keep window centered.
         ZOOMS = [("x 10", 10), ("x 25", 25), ("x 50", 50), ("x 100", 100), ("x 150", 150)] # Zoom options.
         self.zoom = tk.IntVar()
-        self.zoom.set(10)
+        self.zoom.set(50)
         self.zoom_buttons = []
 
         for i in range(len(ZOOMS)):
@@ -194,7 +194,7 @@ class Comparator(ttk.Frame):
         self.mirror_slider_x.grid(row=5, column=2, columnspan=2, sticky=tk.EW, pady=5, ipadx=5)
         self.mirror_slider_x.bind("<ButtonRelease-1>", self.redraw)
         self.mirror_slider_y = tk.Scale(self, from_=260, to=1, resolution=1, orient=tk.VERTICAL)
-        self.mirror_slider_y.set(256)
+        self.mirror_slider_y.set(260)
         self.mirror_slider_y.bind("<ButtonRelease-1>", self.rescale_mir)
         self.mirror_slider_y.grid(row=4, column=1, sticky=tk.NS, pady=5, ipadx=5)
 
