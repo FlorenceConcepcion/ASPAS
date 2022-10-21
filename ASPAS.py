@@ -193,7 +193,7 @@ class Comparator(ttk.Frame):
         self.mirror_slider_x = tk.Scale(self, from_=-3, to=3, resolution=0.01, orient=tk.HORIZONTAL)
         self.mirror_slider_x.grid(row=5, column=2, columnspan=2, sticky=tk.EW, pady=5, ipadx=5)
         self.mirror_slider_x.bind("<ButtonRelease-1>", self.redraw)
-        self.mirror_slider_y = tk.Scale(self, from_=256, to=1, resolution=1, orient=tk.VERTICAL)
+        self.mirror_slider_y = tk.Scale(self, from_=260, to=1, resolution=1, orient=tk.VERTICAL)
         self.mirror_slider_y.set(256)
         self.mirror_slider_y.bind("<ButtonRelease-1>", self.rescale_mir)
         self.mirror_slider_y.grid(row=4, column=1, sticky=tk.NS, pady=5, ipadx=5)
