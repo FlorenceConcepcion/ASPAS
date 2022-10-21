@@ -19,8 +19,7 @@ import tkinter as tk
 from tkinter import filedialog
 from tkinter import ttk
 
-print("test")
-
+print("a second test")
 class Data():
     """
     A container for the data being written to and read from line files.
